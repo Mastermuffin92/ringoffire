@@ -10,7 +10,7 @@ export class Game{
             this.stack.push('ace_' + i);
             this.stack.push('hearts_' + i);
             this.stack.push('clubs_' + i);
-            this.stack.push('diamond_' + i);
+            this.stack.push('diamonds_' + i);
          }
          shuffle(this.stack);
         
