@@ -42,6 +42,13 @@
 .player-position{
     position:absolute;
     right:0;
+    z-index: 1;
+}
+
+.button__add{
+    position: absolute;
+    bottom:32px;
+    right:32px;
 }
 
 
