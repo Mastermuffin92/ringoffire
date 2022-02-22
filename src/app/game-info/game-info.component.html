@@ -1,1 +1,4 @@
-<mat-card>Simple card</mat-card>
+<mat-card>
+    <mat-card-title>{{ card ? title :'Please pick a card' }}</mat-card-title>
+    <mat-card-content>{{ card ? description : 'Click on the card stack, please.'  }}</mat-card-content>
+</mat-card>
