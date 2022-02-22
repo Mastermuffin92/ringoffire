@@ -1,24 +1,28 @@
 .player{
     display: flex;
     align-items: center;
-    justify-content: center;
+
     
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    background-color: orange;
-    width: 250px;
+    background-color: lightgrey;
+    width: 300px;
+    
     
 
     img{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         object-fit: cover;
         border-radius:100%;
-        position: absolute;
-        right:145px;
+
     }
     p{
         font-size: 32px;
-        margin-left:65px;
+        margin-left:16px;
     }
+}
+
+.player-active{
+    background-color: orange !important;
 }
