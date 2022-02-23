@@ -22,12 +22,15 @@ export class GameComponent implements OnInit {
       .collection('games')
       .valueChanges()
       .subscribe((game) => {
-        console.log(game);
+        console.log(game)
     });
   }
 
   newGame(){
     this.game = new Game();
+    this.firestore
+      .collection('games')
+      .add(this.game.toJSON());
   }
   takeCard(){
     if(!this.pickCardAnimation){
