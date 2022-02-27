@@ -19,6 +19,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
     MatCardModule,
     FormsModule,
     MatInputModule,
